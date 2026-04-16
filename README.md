@@ -100,3 +100,38 @@ Models evaluated using:
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/your-username/walmart-sales-analysis.git
+```
+
+### 2. Navigate to Folder 
+```bash
+cd walmart-sales-analysis
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run Notebook 
+```bash
+jupyter notebook
+```
+
+## 📂 Project Structure
+```bash
+walmart-sales-analysis/
+│── Walmart_Retail_Sales_Analysis_Project.ipynb
+│── Walmart Dataset.csv
+│── README.md
+```
+
+##💡 Future Improvements
+- Implement time-series forecasting (ARIMA / Prophet)
+- Deploy using Streamlit or Flask
+- Build interactive dashboards (Power BI / Tableau)
+- Perform hyperparameter tuning
+- Add real-time data pipeline
+
+
+Author 
+Jayendar A
