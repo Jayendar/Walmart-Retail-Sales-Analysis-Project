@@ -1,90 +1,102 @@
-🛒 Walmart Retail Sales Analysis & Forecasting
-📌 Project Overview
+# 🛒 Walmart Retail Sales Analysis & Forecasting
 
-This project focuses on analyzing Walmart retail sales data to uncover patterns, trends, and key business insights. The main objective is to help improve inventory management by aligning supply with demand using data-driven techniques and machine learning models.
-End-to-end Walmart retail sales analysis using Python and SQL, focusing on data cleaning, EDA, Visualization and Sales Forecasting using various libraries and models. Analyses trends, seasonality and produce and regional performance to deliver actionable, data-driven business insights.
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Pandas](https://img.shields.io/badge/Library-Pandas-yellow)
+![NumPy](https://img.shields.io/badge/Library-NumPy-lightgrey)
+![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-orange)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
-🎯 Problem Statement
+---
 
-Retail stores with multiple outlets often face challenges in inventory management due to fluctuating demand.
-This project aims to:
+## 📌 Project Overview
+This project analyzes Walmart retail sales data to uncover trends, seasonality, and key business insights. It also builds machine learning models to forecast future sales, helping improve inventory management and decision-making.
 
-Analyze historical sales data
-Identify trends and seasonality
-Build predictive models to forecast future sales
-📊 Dataset Information
-Dataset Name: Walmart Dataset
-Rows: 6,435
-Columns: 8
-Key Features:
-Store
-Date
-Weekly_Sales (Target Variable)
-Holiday_Flag
-Temperature
-Fuel_Price
-CPI
-Unemployment
-🛠️ Tech Stack
-Programming Language: Python
-Libraries Used:
-Pandas, NumPy → Data manipulation
-Matplotlib, Seaborn → Data visualization
-Scikit-learn → Machine learning models
-🔍 Project Workflow
-1. Data Preprocessing
-Converted Date column into datetime format
-Extracted:
-Year
-Month
-Checked for:
-Missing values
-Duplicates
-Data consistency
-2. Exploratory Data Analysis (EDA)
-Analyzed monthly and weekly sales trends
-Identified peak sales periods
-Visualized relationships between variables
-Observed seasonality patterns
-3. Feature Engineering
-Created time-based features (Year, Month)
-Aggregated sales for better insights
-4. Model Building
+---
 
+## 🎯 Objective
+- Analyze historical sales data  
+- Identify seasonal trends and patterns  
+- Understand the impact of external factors  
+- Build predictive models for sales forecasting  
+
+---
+
+## 📊 Dataset Information
+- **Dataset:** Walmart Retail Dataset  
+- **Records:** 6,435  
+- **Features:** 8  
+
+### 🔑 Columns:
+- `Store` → Store number  
+- `Date` → Weekly sales date  
+- `Weekly_Sales` → Sales amount (Target Variable)  
+- `Holiday_Flag` → Holiday indicator (0 = No, 1 = Yes)  
+- `Temperature` → Temperature on that day  
+- `Fuel_Price` → Fuel price  
+- `CPI` → Consumer Price Index  
+- `Unemployment` → Unemployment rate  
+
+---
+
+## 🛠️ Tech Stack
+- **Language:** Python  
+- **Libraries:**
+  - Pandas & NumPy → Data manipulation  
+  - Matplotlib & Seaborn → Visualization  
+  - Scikit-learn → Machine Learning  
+
+---
+
+## 🔍 Project Workflow
+
+### 1️⃣ Data Preprocessing
+- Converted `Date` column to datetime format  
+- Extracted `Year` and `Month`  
+- Checked for missing values and duplicates  
+
+---
+
+### 2️⃣ Exploratory Data Analysis (EDA)
+- Monthly and weekly sales trends  
+- Seasonal patterns  
+- Store-wise performance analysis  
+- Correlation between features  
+
+---
+
+### 3️⃣ Feature Engineering
+- Created time-based features  
+- Aggregated sales data for insights  
+
+---
+
+### 4️⃣ Model Building
 Implemented multiple regression models:
+- Linear Regression  
+- Decision Tree Regressor  
+- Random Forest Regressor  
 
-Linear Regression
-Decision Tree Regressor
-Random Forest Regressor
-5. Model Evaluation
+---
 
-Models were evaluated using:
+### 5️⃣ Model Evaluation
+Models evaluated using:
+- MAE (Mean Absolute Error)  
+- MSE (Mean Squared Error)  
+- RMSE (Root Mean Squared Error)  
+- R² Score  
 
-Mean Absolute Error (MAE)
-Mean Squared Error (MSE)
-Root Mean Squared Error (RMSE)
-R² Score
-📈 Key Insights
-Sales show strong seasonal trends
-Certain months consistently generate higher revenue
-External factors like fuel price and unemployment influence sales
-Random Forest performed better compared to other models
-🚀 How to Run the Project
-Clone the repository:
+---
+
+## 📈 Key Insights
+- 📊 Sales show strong seasonal trends  
+- 📅 Certain months consistently generate higher revenue  
+- ⛽ Fuel price and unemployment impact sales  
+- 🌲 Random Forest performed best among models  
+
+---
+
+## 🚀 How to Run the Project
+
+### 1. Clone the repository
+```bash
 git clone https://github.com/your-username/walmart-sales-analysis.git
-Navigate to the project folder:
-cd walmart-sales-analysis
-Install dependencies:
-pip install -r requirements.txt
-Run the notebook:
-jupyter notebook
-📂 Project Structure
-├── Walmart_Retail_Sales_Analysis_Project.ipynb
-├── Walmart DataSet.csv
-├── README.md
-└── requirements.txt
-💡 Future Improvements
-Deploy the model using Streamlit or Flask
-Add time-series forecasting models (ARIMA, Prophet)
-Improve feature engineering for higher accuracy
-Build a dashboard using Power BI or Tableau
